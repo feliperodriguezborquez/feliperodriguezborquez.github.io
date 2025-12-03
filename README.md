@@ -1,20 +1,15 @@
 # Hi there! I'm Felipe 👋
 
-### Master's in Computer Science & Bachelor's in Mathematical and Computational Engineering @ Pontificia Universidad Católica de Chile | GenAI Engineer
+### AI Engineer
+Master's in Computer Science @ Pontificia Universidad Católica de Chile
+Bachelor's in Mathematical and Computational Engineering @ Pontificia Universidad Católica de Chile
 
-I am a software engineer and researcher at the intersection of **Artificial Intelligence** and **Creative Systems**. My current focus is on understanding and optimizing Large Language Models, specifically **Mixture of Experts (MoE)** architectures and **Attention Mechanisms**.
 
-Beyond the code, I am a composer and music theory enthusiast, often building tools that bridge the gap between music notation and programmatic animation.
+Beyond the code, I am a composer and music theory enthusiast.
 
----
-
-### 🔭 Current Focus
-* **Thesis:** Researching **Mixture of Experts (MoE)** and reducing myopic routing in LLMs (Pontificia Universidad Católica de Chile).
-* **Deep Thoughts AI:** Building an open-source platform/newsletter to summarize and explain complex AI papers ("AI in 5 Minutes").
-* **Harmonim:** Developing a Python library for programmatic musical score animation.
 
 ### 📚 Selected Publications
-I have published research in Natural Language Processing and Computational Social Science:
+I have published research papers in NLP:
 
 * 📄 **[LogitRouter: a novel Attention variant for reducing Myopic Routing in Mixture of Experts](https://scholar.google.com/scholar?oi=bibs&cluster=16143024624572172655&btnI=1&hl=en)**
     * *Published at INLG (International Conference on Natural Language Generation).*
