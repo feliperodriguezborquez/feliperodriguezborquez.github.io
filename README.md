@@ -1,16 +1,45 @@
-## Hi there 👋
+# Hi there! I'm Felipe 👋
 
-<!--
-**feliperodriguezborquez/feliperodriguezborquez** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Master's in Computer Science & Bachelor's in Mathematical and Computational Engineering @ Pontificia Universidad Católica de Chile | GenAI Engineer
 
-Here are some ideas to get you started:
+I am a software engineer and researcher at the intersection of **Artificial Intelligence** and **Creative Systems**. My current focus is on understanding and optimizing Large Language Models, specifically **Mixture of Experts (MoE)** architectures and **Attention Mechanisms**.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Beyond the code, I am a composer and music theory enthusiast, often building tools that bridge the gap between music notation and programmatic animation.
+
+---
+
+### 🔭 Current Focus
+* **Thesis:** Researching **Mixture of Experts (MoE)** and reducing myopic routing in LLMs (Pontificia Universidad Católica de Chile).
+* **Deep Thoughts AI:** Building an open-source platform/newsletter to summarize and explain complex AI papers ("AI in 5 Minutes").
+* **Harmonim:** Developing a Python library for programmatic musical score animation.
+
+### 📚 Selected Publications
+I have published research in Natural Language Processing and Computational Social Science:
+
+* 📄 **[LogitRouter: a novel Attention variant for reducing Myopic Routing in Mixture of Experts](https://scholar.google.com/scholar?oi=bibs&cluster=16143024624572172655&btnI=1&hl=en)**
+    * *Published at INLG (International Conference on Natural Language Generation).*
+* 📄 **[Simulating conversations on social media with generative agent-based models](https://scholar.google.com/scholar?oi=bibs&cluster=836265211092121266&btnI=1&hl=en)**
+    * *Published in EPJ Data Science.*
+
+---
+
+### 🛠 Tech Stack
+
+**AI & Data Science**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![LLMs](https://img.shields.io/badge/LLMs-GenAI-blue)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+
+**Development & DevOps**
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white)
+
+---
+
+### 🎵 Featured Projects
+
+| Project | Description | Stack |
+| :--- | :--- | :--- |
+| **[Mis Canciones](https://mis-canciones.onrender.com/)** | Full-stack platform to manage and stream original musical compositions (Dockerized). | Web, Docker |
