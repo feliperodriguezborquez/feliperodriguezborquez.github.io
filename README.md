@@ -1,3 +1,4 @@
+<img src="me.jpg" width="150" height="150" style="border-radius: 50%;">
 # Hi there! I'm Felipe 👋
 
 ### AI Engineer
