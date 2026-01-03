@@ -1,48 +1,39 @@
 ---
 ---
-/* El front matter vacío arriba es necesario para que Jekyll procese el CSS */
+:root {
+  --bg-color: #010409;
+  --card-bg: rgba(22, 27, 34, 0.8);
+  --accent-color: #58a6ff;
+  --text-main: #e6edf3;
+  --text-dim: #8b949e;
+}
 
 body {
-  background-color: #0d1117 !important; /* Fondo oscuro estilo GitHub */
-  color: #c9d1d9 !important;
-  font-family: 'Inter', -apple-system, sans-serif;
-  line-height: 1.6;
+  background: radial-gradient(circle at top right, #161b22, #010409);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Mejora de los contenedores */
-.wrapper, .container {
-  max-width: 850px;
-  background: #161b22;
-  padding: 40px;
-  border-radius: 12px;
+/* Efecto de Tarjeta Flotante */
+.section-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
   border: 1px solid #30363d;
-  margin-top: 50px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-/* Estilo de títulos */
-h1, h2, h3 {
-  color: #f0f6fc;
-  border-bottom: 1px solid #30363d;
-  padding-bottom: 10px;
+.section-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
 }
 
-/* Enlaces estilo AI Engineer */
-a {
-  color: #58a6ff;
-  transition: 0.3s;
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-a:hover {
-  color: #1f6feb;
-  text-decoration: none;
-}
-
-/* Tarjetas para publicaciones y proyectos */
-blockquote {
-  background: #0d1117;
-  border-left: 4px solid #58a6ff;
-  padding: 15px 20px;
-  border-radius: 4px;
-  margin: 20px 0;
-}
+main { animation: fadeIn 0.8s ease-out; }
