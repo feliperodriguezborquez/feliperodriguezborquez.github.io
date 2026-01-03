@@ -19,10 +19,10 @@
       <img src="https://img.shields.io/badge/X_Personal-000000?style=flat-square&logo=x&logoColor=white" alt="Twitter Personal">
     </a>
     <a href="https://twitter.com/MasiaBarca1899" target="_blank">
-      <img src="https://img.shields.io/badge/X_La_Masía-004D98?style=flat-square&logo=fc-barcelona&logoColor=white" alt="Twitter La Masía">
+      <img src="https://img.shields.io/badge/X_La_Masía-004D98?style=flat-square&logo=fc-barcelona&logoColor=white" alt="Masía Barca">
     </a>
     <a href="https://twitter.com/DeepThoughtsAI" target="_blank">
-      <img src="https://img.shields.io/badge/X_AI_Updates-1DA1F2?style=flat-square&logo=openai&logoColor=white" alt="Twitter IA">
+      <img src="https://img.shields.io/badge/X_AI_Updates-1DA1F2?style=flat-square&logo=openai&logoColor=white" alt="Deep Thoughts">
     </a>
   </div>
 </div>
