@@ -1,0 +1,48 @@
+---
+---
+/* El front matter vacío arriba es necesario para que Jekyll procese el CSS */
+
+body {
+  background-color: #0d1117 !important; /* Fondo oscuro estilo GitHub */
+  color: #c9d1d9 !important;
+  font-family: 'Inter', -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Mejora de los contenedores */
+.wrapper, .container {
+  max-width: 850px;
+  background: #161b22;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  margin-top: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Estilo de títulos */
+h1, h2, h3 {
+  color: #f0f6fc;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 10px;
+}
+
+/* Enlaces estilo AI Engineer */
+a {
+  color: #58a6ff;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #1f6feb;
+  text-decoration: none;
+}
+
+/* Tarjetas para publicaciones y proyectos */
+blockquote {
+  background: #0d1117;
+  border-left: 4px solid #58a6ff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
