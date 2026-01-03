@@ -6,14 +6,20 @@ layout: null
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Rodríguez | AI Engineer</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Felipe Rodríguez | AI Engineer & Composer</title>
+    
     <meta property="og:title" content="Felipe Rodríguez | AI Engineer & Composer">
-    <meta property="og:description" content="Portfolio of a Master in CS specialized in NLP, MoEs, and Generative Models.">
-    <meta property="og:image" content="https://feliperodriguezborquez.github.io/me.jpg"> <meta property="og:url" content="https://feliperodriguezborquez.github.io/">
+    <meta property="og:description" content="M.Sc. in Computer Science with highest honors. Specialized in NLP, MoEs, and Generative Models.">
+    <meta property="og:image" content="https://feliperodriguezborquez.github.io/me.jpg">
+    <meta property="og:url" content="https://feliperodriguezborquez.github.io/">
     <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -23,14 +29,17 @@ layout: null
             
             <h1>Felipe Rodríguez Bórquez</h1>
             <p class="subtitle">Mathematical & Computational Engineer | M.Sc. in Computer Science</p>
-            <p class="bio-quote">"Beyond the code, I am a composer and music theory enthusiast."</p>
+            <p class="bio-short">"Bridging mathematical logic and artistic expression."</p>
             
             <div class="connections-wrapper">
                 <div class="social-group">
-                    <span class="social-label">Professional</span>
+                    <span class="social-label">Connect</span>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/feliperodriguezborquez" target="_blank">
+                        <a href="https://linkedin.com/in/feliperodriguezborquez" target="_blank">
                             <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+                        </a>
+                        <a href="https://github.com/feliperodriguezborquez" target="_blank">
+                            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
                         </a>
                         <a href="https://huggingface.co/feliperodriguezborquez" target="_blank">
                             <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace"/>
@@ -41,7 +50,7 @@ layout: null
                 <div class="divider-vertical"></div>
 
                 <div class="social-group">
-                    <span class="social-label">Community & Interests</span>
+                    <span class="social-label">Community</span>
                     <div class="social-links">
                         <a href="https://twitter.com/__FelipeRB" target="_blank">
                             <img src="https://img.shields.io/badge/Personal-000000?style=flat-square&logo=x&logoColor=white" alt="Personal X">
@@ -57,13 +66,47 @@ layout: null
             </div>
         </header>
 
+        <section id="about" class="section-card about-section">
+            <h2><span class="icon">👋</span> About Me</h2>
+            <p>
+                I am an AI Engineer graduated with <strong>highest honors</strong> from PUC Chile (M.Sc. in Computer Science). 
+                My research, supported by the <strong>IMFD Scholarship</strong>, focuses on making Large Language Models more efficient and interpretable (MoEs).
+            </p>
+            <p>
+                Beyond code, I am a <strong>Composer and Musical Director</strong>. I have led the production of a full studio album for <em>Misión País</em>, 
+                applying the same rigor to harmony and counterpoint as I do to neural network architectures.
+            </p>
+        </section>
+
+        <section id="experience" class="section-card">
+            <h2><span class="icon">💼</span> Experience</h2>
+            
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Machine Learning Engineer</h3>
+                    <span class="exp-date">Jan 2024 - Apr 2024</span>
+                </div>
+                <span class="exp-company">Aclara Resources</span>
+                <p>Trained ML models on heterogeneous geological data, achieving up to <strong>91% accuracy</strong> in rare earth detection.</p>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Research Engineer Intern</h3>
+                    <span class="exp-date">Jan 2023 - Mar 2023</span>
+                </div>
+                <span class="exp-company">Millennium Institute for Foundational Research on Data (IMFD)</span>
+                <p>Architected a network-simulator system and engineered the core <strong>Agent-Based Modeling (ABM)</strong> framework to study social dynamics.</p>
+            </div>
+        </section>
+
         <section id="publications" class="section-card">
-            <h2>📚 Selected Publications</h2>
+            <h2><span class="icon">📚</span> Selected Publications</h2>
             
             <div class="pub-item">
                 <div class="pub-content">
                     <strong>LogitRouter: a novel Attention variant for reducing Myopic Routing in Mixture of Experts</strong><br>
-                    <span class="pub-venue">Published at INLG (International Conference on Natural Language Generation).</span>
+                    <span class="pub-venue">Published at INLG 2025 · Lead Author</span>
                 </div>
                 <a href="https://scholar.google.com/scholar?oi=bibs&cluster=16143024624572172655&btnI=1&hl=en" class="pub-link">Read Paper →</a>
             </div>
@@ -71,57 +114,90 @@ layout: null
             <div class="pub-item">
                 <div class="pub-content">
                     <strong>Simulating conversations on social media with generative agent-based models</strong><br>
-                    <span class="pub-venue">Published in EPJ Data Science.</span>
+                    <span class="pub-venue">Published in EPJ Data Science 2025</span>
                 </div>
                 <a href="https://scholar.google.com/scholar?oi=bibs&cluster=836265211092121266&btnI=1&hl=en" class="pub-link">Read Paper →</a>
             </div>
         </section>
 
         <section id="projects" class="section-card">
-            <h2>🎵 Featured Projects</h2>
-            <div class="table-responsive">
-                <table class="project-table">
-                    <thead>
-                        <tr>
-                            <th>Project</th>
-                            <th>Description</th>
-                            <th>Stack</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="https://mis-canciones.onrender.com/">Mis Canciones</a></td>
-                            <td>Full-stack platform to manage and stream original musical compositions.</td>
-                            <td>
-                                <span class="badge-mini">Docker</span>
-                                <span class="badge-mini">Web</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h2><span class="icon">🚀</span> Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>🎵 Mis Canciones</h3>
+                        <a href="https://mis-canciones.onrender.com/" target="_blank" class="card-link-icon">↗</a>
+                    </div>
+                    <p>Full-stack platform to manage and stream a catalog of 25+ original compositions.</p>
+                    <div class="stack-tags">
+                        <span class="badge-mini">Flask</span>
+                        <span class="badge-mini">SQLAlchemy</span>
+                        <span class="badge-mini">Render</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>🎼 Harmonim</h3>
+                        <a href="https://github.com/feliperodriguezborquez" target="_blank" class="card-link-icon">↗</a>
+                    </div>
+                    <p>Open-source Python library for automatic animation of musical scores using Computer Vision.</p>
+                    <div class="stack-tags">
+                        <span class="badge-mini">Python</span>
+                        <span class="badge-mini">Manim</span>
+                        <span class="badge-mini">CV</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>⚡ AI in 5 Minutes</h3>
+                        <a href="#" class="card-link-icon">↗</a> </div>
+                    <p>Web platform for summarizing key insights from relevant AI papers for the community.</p>
+                    <div class="stack-tags">
+                        <span class="badge-mini">Jekyll</span>
+                        <span class="badge-mini">JS</span>
+                        <span class="badge-mini">Open Source</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <section id="tech" class="section-card">
-            <h2>🛠 Tech Stack</h2>
+            <h2><span class="icon">🛠</span> Tech Stack</h2>
             
-            <h3 class="stack-category">AI & Data Science</h3>
+            <h3 class="stack-category">Core & Languages</h3>
             <div class="badges-container">
                 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
-                <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" alt="PyTorch">
-                <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" alt="Pandas">
-                <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
+                <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white" alt="C++">
+                <img src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white" alt="SQL">
+                <img src="https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white" alt="LaTeX">
             </div>
 
-            <h3 class="stack-category">Development & DevOps</h3>
+            <h3 class="stack-category">AI & Libraries</h3>
+            <div class="badges-container">
+                <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" alt="PyTorch">
+                <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black" alt="Transformers">
+                <img src="https://img.shields.io/badge/WandB-FFBE00?style=flat&logo=weightsandbiases&logoColor=black" alt="WandB">
+                <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" alt="Pandas">
+                <img src="https://img.shields.io/badge/Manim-3E464C?style=flat&logo=python&logoColor=white" alt="Manim">
+            </div>
+            
+            <h3 class="stack-category">DevOps & Tools</h3>
             <div class="badges-container">
                 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker">
                 <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git">
-                <img src="https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white" alt="LaTeX">
+                <img src="https://img.shields.io/badge/Gradio-FF7C00?style=flat&logo=gradio&logoColor=white" alt="Gradio">
             </div>
         </section>
 
     </main>
+    
+    <footer style="text-align: center; color: var(--text-dim); padding: 40px 0 20px; font-size: 0.85rem;">
+        <p>© 2026 Felipe Rodríguez Bórquez. Built with code & music.</p>
+    </footer>
 
 </body>
 </html>
