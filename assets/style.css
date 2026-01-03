@@ -39,11 +39,12 @@ h1 {
 }
 
 .subtitle {
-  color: var(--accent-color);
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-top: 5px;
-  margin-bottom: 25px;
+    /* Reemplaza el color solido por esto */
+    background: linear-gradient(90deg, #58a6ff, #a371f7); /* Azul a Morado */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-top: 5px;
 }
 
 /* Contenedor del texto About Me en el header */
