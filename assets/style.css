@@ -1,39 +1,108 @@
----
----
 :root {
-  --bg-color: #010409;
-  --card-bg: rgba(22, 27, 34, 0.8);
+  --bg-color: #0d1117; /* GitHub Dark Dimmed background */
+  --card-bg: #161b22;
+  --border-color: #30363d;
   --accent-color: #58a6ff;
-  --text-main: #e6edf3;
+  --text-main: #c9d1d9;
   --text-dim: #8b949e;
 }
 
 body {
-  background: radial-gradient(circle at top right, #161b22, #010409);
+  background-color: var(--bg-color);
   color: var(--text-main);
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-/* Efecto de Tarjeta Flotante */
+/* Centrado del contenido */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Header Styles */
+h1 {
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+}
+
+.subtitle {
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--accent-color);
+  box-shadow: 0 0 25px rgba(88, 166, 255, 0.2);
+  object-fit: cover;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Tarjetas */
 .section-card {
   background: var(--card-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid #30363d;
-  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
   padding: 2rem;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   border-color: var(--accent-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
-/* Animación de entrada */
+h2 {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* Tech Stack Badges */
+.badges {
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
+.badge {
+    background-color: rgba(56, 139, 253, 0.15);
+    color: #58a6ff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    border: 1px solid rgba(56, 139, 253, 0.4);
+    font-weight: 600;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animación */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-main { animation: fadeIn 0.8s ease-out; }
