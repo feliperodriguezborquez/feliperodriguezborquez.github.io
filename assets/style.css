@@ -15,7 +15,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
 }
 
 main {
@@ -44,14 +43,26 @@ h1 {
   font-size: 1.1rem;
   font-weight: 500;
   margin-top: 5px;
-  margin-bottom: 8px;
+  margin-bottom: 25px;
 }
 
-.bio-short {
+/* Contenedor del texto About Me en el header */
+.bio-container {
+    max-width: 650px;
+    margin: 0 auto 25px auto;
     color: var(--text-dim);
-    font-style: italic;
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center; /* O justify si prefieres */
+}
+
+.bio-container p {
+    margin-bottom: 15px;
+}
+
+.bio-container strong {
+    color: var(--text-main);
+    font-weight: 600;
 }
 
 .profile-pic {
@@ -64,55 +75,26 @@ h1 {
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-/* Social Connections Box */
+/* Social Box Simplificada */
 .connections-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background: rgba(22, 27, 34, 0.6);
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-    max-width: 480px;
-    margin: 0 auto;
-    backdrop-filter: blur(5px);
-}
-
-.social-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-}
-
-.social-label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--text-dim);
-    font-weight: 600;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.social-links img { height: 26px; transition: transform 0.2s; }
-.social-links a:hover img { transform: scale(1.05); }
-
-.divider-vertical {
-    width: 80%;
-    height: 1px;
-    background: var(--border-color);
-    opacity: 0.5;
+.social-links img { 
+    height: 28px; 
+    transition: transform 0.2s; 
 }
+.social-links a:hover img { transform: scale(1.1); }
 
-/* --- General Section Styles --- */
+
+/* --- Sections --- */
 .section-card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -132,57 +114,6 @@ h2 {
   gap: 10px;
 }
 .icon { font-size: 1.2rem; }
-
-/* About Section */
-.about-section p {
-    color: var(--text-main);
-    opacity: 0.9;
-    margin-bottom: 1rem;
-}
-.about-section strong { color: #fff; }
-
-/* Experience List */
-.exp-item {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px dashed var(--border-color);
-}
-.exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
-.exp-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    margin-bottom: 4px;
-}
-
-.exp-header h3 {
-    margin: 0;
-    font-size: 1.1rem;
-    color: #fff;
-}
-
-.exp-date {
-    font-size: 0.85rem;
-    color: var(--text-dim);
-    font-family: monospace;
-}
-
-.exp-company {
-    display: block;
-    color: var(--accent-color);
-    font-weight: 500;
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-}
-
-.exp-item p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: var(--text-main);
-    opacity: 0.85;
-}
 
 /* Publications */
 .pub-item {
@@ -215,7 +146,7 @@ h2 {
 }
 .pub-link:hover { background: rgba(88, 166, 255, 0.1); border-color: var(--accent-color); }
 
-/* --- Projects Grid (Cards) --- */
+/* --- Projects Grid --- */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -227,7 +158,7 @@ h2 {
     background: rgba(13, 17, 23, 0.5);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     transition: transform 0.2s, border-color 0.2s;
@@ -247,7 +178,7 @@ h2 {
 
 .project-card h3 {
     margin: 0;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: #fff;
 }
 
@@ -255,18 +186,16 @@ h2 {
     color: var(--text-dim);
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.2s;
 }
 .card-link-icon:hover { color: var(--accent-color); }
 
 .project-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-dim);
     margin: 0 0 15px 0;
     flex-grow: 1;
 }
 
-/* Tags/Badges within Cards */
 .stack-tags {
     display: flex;
     flex-wrap: wrap;
@@ -283,7 +212,7 @@ h2 {
     font-family: monospace;
 }
 
-/* Tech Stack Badges */
+/* Tech Stack */
 .stack-category {
     font-size: 0.85rem;
     color: var(--text-dim);
@@ -293,14 +222,15 @@ h2 {
     letter-spacing: 1px;
     font-weight: 600;
 }
+.badges-container { display: flex; gap: 8px; flex-wrap: wrap; }
 
-.badges-container {
-    display: flex; 
-    gap: 8px; 
-    flex-wrap: wrap;
+footer {
+    text-align: center;
+    color: var(--text-dim);
+    padding: 40px 0 20px;
+    font-size: 0.85rem;
 }
 
-/* Animations & Mobile */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -309,5 +239,4 @@ h2 {
 @media (max-width: 600px) {
     .pub-item { flex-direction: column; align-items: flex-start; gap: 10px; }
     .pub-link { width: 100%; text-align: center; box-sizing: border-box; }
-    header { padding: 40px 0; }
 }
