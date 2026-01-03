@@ -261,3 +261,65 @@ footer {
     background: rgba(56, 139, 253, 0.15);
     color: var(--accent-color);
 }
+
+/* Estilos para los nuevos Botones Sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #21262d; /* Gris oscuro para contraste */
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #c9d1d9; /* Texto gris claro */
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.social-btn span {
+    display: inline-block;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* Colores Específicos al hacer Hover */
+
+/* LinkedIn Blue */
+.social-btn.linkedin:hover {
+    background-color: rgba(10, 102, 194, 0.15);
+    border-color: #0a66c2;
+    color: #0a66c2;
+}
+
+/* GitHub White/Black */
+.social-btn.github:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/* HuggingFace Yellow */
+.social-btn.hf:hover {
+    background-color: rgba(255, 210, 30, 0.1);
+    border-color: #FFD21E;
+    color: #FFD21E;
+}
+
+/* X (Twitter) White */
+.social-btn.x:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    color: #ffffff;
+}
