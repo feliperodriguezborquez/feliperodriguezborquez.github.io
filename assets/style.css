@@ -241,3 +241,23 @@ footer {
     .pub-item { flex-direction: column; align-items: flex-start; gap: 10px; }
     .pub-link { width: 100%; text-align: center; box-sizing: border-box; }
 }
+
+.badge-tech {
+    background: rgba(238, 237, 242, 0.1); /* Un gris muy sutil */
+    color: #e6edf3;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border: 1px solid #30363d;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.badge-tech:hover {
+    border-color: var(--accent-color);
+    background: rgba(56, 139, 253, 0.15);
+    color: var(--accent-color);
+}
