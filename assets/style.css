@@ -23,7 +23,7 @@ main {
   animation: fadeIn 0.8s ease-out;
 }
 
-/* Header Styles */
+/* --- Header Styles --- */
 header {
     text-align: center;
     padding: 60px 0 40px;
@@ -32,21 +32,22 @@ header {
 h1 {
   color: #ffffff;
   margin-bottom: 0.2rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Un poco mas ajustado */
 }
 
 .subtitle {
-  color: var(--text-main);
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  color: var(--accent-color); /* Color de acento para el título profesional */
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .bio-quote {
     color: var(--text-dim);
     font-style: italic;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
 }
 
 .profile-pic {
@@ -56,25 +57,64 @@ h1 {
   border: 4px solid var(--border-color);
   object-fit: cover;
   margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Nueva Estructura de Redes Sociales */
+.connections-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: rgba(22, 27, 34, 0.5); /* Fondo sutil */
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.social-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+    font-weight: 600;
 }
 
 .social-links {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.social-secondary {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .social-links img {
-    height: 28px; /* Altura uniforme para badges */
+    height: 26px;
+    transition: transform 0.2s;
 }
 
-/* Sections & Cards */
+.social-links a:hover img {
+    transform: scale(1.05);
+}
+
+/* Divider sutil si quisieras separarlos horizontalmente en desktop grande, 
+   pero vertical funciona mejor en mobile */
+.divider-vertical {
+    width: 100%;
+    height: 1px;
+    background: var(--border-color);
+    opacity: 0.5;
+}
+
+/* --- Sections & Cards --- */
 .section-card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -88,9 +128,7 @@ h2 {
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 10px;
   margin-top: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  font-size: 1.5rem;
 }
 
 /* Publications */
@@ -102,10 +140,7 @@ h2 {
     align-items: center;
     gap: 20px;
 }
-
-.pub-item:last-child {
-    border-bottom: none;
-}
+.pub-item:last-child { border-bottom: none; }
 
 .pub-venue {
     display: block;
@@ -120,28 +155,35 @@ h2 {
     text-decoration: none;
     font-weight: 600;
     white-space: nowrap;
+    border: 1px solid var(--border-color);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    transition: background 0.2s;
+}
+.pub-link:hover {
+    background: rgba(88, 166, 255, 0.1);
 }
 
 /* Tech Stack */
 .stack-category {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--text-dim);
     margin-top: 1.5rem;
     margin-bottom: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .badges-container {
     display: flex; 
-    gap: 10px; 
+    gap: 8px; 
     flex-wrap: wrap;
 }
 
 /* Projects Table */
-.table-responsive {
-    overflow-x: auto;
-}
+.table-responsive { overflow-x: auto; }
 
 .project-table {
     width: 100%;
@@ -155,12 +197,14 @@ h2 {
     padding: 10px;
     border-bottom: 2px solid var(--border-color);
     color: var(--accent-color);
+    font-size: 0.9rem;
 }
 
 .project-table td {
     padding: 12px 10px;
     border-bottom: 1px solid var(--border-color);
     vertical-align: top;
+    font-size: 0.95rem;
 }
 
 .badge-mini {
@@ -168,21 +212,22 @@ h2 {
     color: var(--accent-color);
     padding: 2px 8px;
     border-radius: 12px;
-    font-size: 0.8em;
+    font-size: 0.75em;
     border: 1px solid rgba(56, 139, 253, 0.3);
     margin-right: 4px;
     font-family: monospace;
 }
 
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
+a { color: var(--accent-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .pub-item { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .pub-link { align-self: flex-start; }
 }
